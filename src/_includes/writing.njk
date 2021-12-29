@@ -1,0 +1,12 @@
+{% extends "page.njk" %}
+
+{% block content %}
+
+  <h1>{{ title }}</h1>
+
+
+  {# <p class="words">{{ content | wordcount }} words</p> #}
+
+  {{ content | safe }}
+
+{% endblock %}

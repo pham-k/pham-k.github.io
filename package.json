@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "npx @11ty/eleventy --serve",
-    "dev": "npx @11ty/eleventy"
+    "watch-11ty": "npx @11ty/eleventy --serve",
+    "build-11ty": "npx @11ty/eleventy",
+    "build-stylus": "stylus --compress ./src/stylus/ --out ./src/css/",
+    "watch-stylus": "stylus --watch ./src/stylus/ --out ./src/css/",
+    "dev": "concurrently 'npm:watch-*'",
+    "build": "npx run build:stylus && npx run build:11ty"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,9 @@
   },
   "homepage": "https://github.com/pham-k/pham-k.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "concurrently": "^6.2.0",
+    "stylus": "^0.54.8"
   }
 }
