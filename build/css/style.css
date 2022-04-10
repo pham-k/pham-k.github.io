@@ -1,0 +1,80 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #393E46;
+  background-color: #eeeeee;
+  font-size: 24px;
+}
+
+h1, h2, h3 {
+  color: #222831;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem;
+}
+
+nav a:link, nav a:visited {
+  width: 100px;
+  background-color: #eeeeee;
+  color: #393E46;
+  border: 2px solid #393E46;
+  border-radius: 20px;
+  margin: 4px;
+  padding: 10px 20px 6px 20px;
+  text-align: center;
+  vertical-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a:hover, nav a:active {
+  background-color: #7C83FD;
+  color: #eeeeee;
+  border: 2px solid #7C83FD;
+}
+
+article {
+  margin: 16px 8px;
+}
+
+article a {
+  text-align: center;
+  vertical-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: #7C83FD;
+  font-weight: bold;
+}
+
+article a:hover {
+  color: black;
+}
+
+@media screen and (min-width: 480px) {
+  article {
+    margin: 16px 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  article {
+    margin: 16px 64px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  article {
+    margin: 16px 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
