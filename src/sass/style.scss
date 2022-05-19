@@ -1,4 +1,4 @@
-$bg-color: #eeeeee;
+$bg-color: #fffafa;
 $text-color: #393E46;
 $heading-color: #222831;
 $primary-color: #7C83FD;
@@ -8,6 +8,11 @@ body {
     color: $text-color;
     background-color: $bg-color;
     font-size: 24px;
+    margin: 0;
+}
+
+main {
+    margin: 16px;
 }
 
 h1, h2, h3 {
@@ -16,8 +21,8 @@ h1, h2, h3 {
 
 .avatar {
     vertical-align: middle;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
 }
 
@@ -49,11 +54,20 @@ nav a:hover, nav a:active {
     border: 2px solid $primary-color;
 }
 
+.post-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-list-item {
+    margin: 12px 0px;
+}
+
 article {
     margin: 16px 8px;
 }
 
-article a {
+article a, .post-list-item a {
     text-align: center;
     vertical-align: center;
     text-decoration: none;
@@ -62,7 +76,7 @@ article a {
     font-weight: bold;
 }
 
-article a:hover {
+article a:hover, .post-list-item a:hover {
     color: black;
 }
   

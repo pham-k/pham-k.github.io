@@ -1,5 +1,5 @@
 ---
-title: Post 2
+title: PicoCTF - Mind your P and Q
 ---
 
 Post content

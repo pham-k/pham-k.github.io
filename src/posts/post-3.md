@@ -1,5 +1,5 @@
 ---
-title: Post 3
+title: PicoCTF - Stonk
 ---
 
 Post content
