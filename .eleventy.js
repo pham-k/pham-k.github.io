@@ -8,6 +8,9 @@ module.exports = eleventyConfig => {
         });
         return arr.slice(0, 1);
     })
+    eleventyConfig.addCollection("writeups", function(collectionApi) {
+        return collectionApi.getFilteredByTag("writeups");
+    });
 
     return {
         dir: {
