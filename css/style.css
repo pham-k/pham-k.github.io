@@ -1,9 +1,33 @@
+.header {
+  background-color: #313139;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.header h1 {
+  color: #fafafa;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.header p {
+  color: #dddddd;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.header span {
+  color: #dddddd;
+  font-size: 1.2rem;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   color: #393E46;
-  background-color: #fffafa;
+  background-color: #fafafa;
   font-size: 24px;
   margin: 0;
+  text-align: justify;
 }
 
 main {
@@ -26,27 +50,17 @@ h1, h2, h3 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 nav a:link, nav a:visited {
-  width: 100px;
-  background-color: #fffafa;
-  color: #393E46;
-  border: 2px solid #393E46;
-  border-radius: 20px;
-  margin: 4px;
-  padding: 10px 20px 6px 20px;
+  color: #fafafa;
+  margin: 4px 1rem;
+  padding: 8px 8px 4px 8px;
   text-align: center;
   vertical-align: center;
   text-decoration: none;
   display: inline-block;
-}
-
-nav a:hover, nav a:active {
-  background-color: #7C83FD;
-  color: #fffafa;
-  border: 2px solid #7C83FD;
 }
 
 .post-list {
@@ -67,26 +81,26 @@ article a, .post-list-item a {
   vertical-align: center;
   text-decoration: none;
   display: inline-block;
-  color: #7C83FD;
+  color: #393E46;
   font-weight: bold;
 }
 
 article a:hover, .post-list-item a:hover {
-  color: black;
+  color: #7C83FD;
 }
 
 @media screen and (min-width: 480px) {
-  article {
+  article, section {
     margin: 16px 32px;
   }
 }
 @media screen and (min-width: 768px) {
-  article {
+  article, section {
     margin: 16px 64px;
   }
 }
 @media screen and (min-width: 1024px) {
-  article {
+  article, section {
     margin: 16px 200px;
   }
 }
