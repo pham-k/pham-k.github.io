@@ -8,7 +8,7 @@
     "watch:sass": "sass --watch src/sass:build/css",
     "build:sass": "sass src/sass:build/css",
     "watch:eleventy": "npx @11ty/eleventy --serve",
-    "build:eleventy": "npx @11ty/eleventy",
+    "build:eleventy": "env NODE_ENV=production npx @11ty/eleventy --pathprefix 'build'",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:*"
   },
